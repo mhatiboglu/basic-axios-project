@@ -15,9 +15,21 @@
     "eject": "react-scripts eject"
   },
   "resolutions": {
-    "../../node-gyp": "5.0.0"
+    "webpack": "4.42.0"
   },
   "optionalDependencies": {
     "fsevents": "^2.1.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
