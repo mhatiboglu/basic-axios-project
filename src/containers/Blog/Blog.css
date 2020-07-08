@@ -20,7 +20,9 @@
 }
 
 .Blog a:hover,
-.Blog a:active{
+.Blog a:active,
+.Blog a.my-active
+{
     color: rgba(0, 0, 0, 0.61);
     text-decoration:underline;
 }

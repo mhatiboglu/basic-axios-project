@@ -8,6 +8,7 @@ class Posts extends Component {
     posts: [],
   }
     componentDidMount() {
+    //console.log (this.props)
     axios
       .get("/posts")
       .then((response) => {
@@ -16,7 +17,7 @@ class Posts extends Component {
           return { ...post, author: "John" };
         });
         this.setState({ posts: uptadatedPosts });
-        console.log(response);
+        //console.log(response);
       })
       .catch((error) => {
         //this.setState({ error: true });
