@@ -3,7 +3,7 @@ import React from "react";
 import "./Post.css";
 
 const post = (props) => {
-  console.log("n2", props);
+  //console.log("n2", props);
 
   return (
     <article className="Post" onClick={props.clicked}>

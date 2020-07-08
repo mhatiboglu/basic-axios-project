@@ -11,8 +11,8 @@ class Blog extends Component {
           <nav>
             <ul>
               <li>
-                <NavLink to="/" exact activeClassName="my-active">
-                  Home
+                <NavLink to="/posts/" exact activeClassName="my-active">
+                  Posts
                 </NavLink>
               </li>
               <li>
@@ -30,18 +30,11 @@ class Blog extends Component {
             </ul>
           </nav>
         </header>
-        <Route path="/" exact component={Posts} />
         <Route path="/new-post" component={NewPost} />
+        <Route path="/posts" component={Posts} />
       </div>
     );
   }
 }
 
 export default Blog;
-
-/* <section>
-          <FullPost id={this.state.selectedPostId} />
-        </section>
-        <section>
-          <NewPost />
-        </section> */
