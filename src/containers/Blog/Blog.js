@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Posts from "../../containers/Blog/Posts/Posts";
-import { Route, NavLink } from "react-router-dom";
+import { Route, NavLink, Redirect } from "react-router-dom";
 import "./Blog.css";
 import NewPost from "../../containers/Blog/NewPost/NewPost";
 class Blog extends Component {
@@ -32,6 +32,7 @@ class Blog extends Component {
         </header>
         <Route path="/new-post" component={NewPost} />
         <Route path="/posts" component={Posts} />
+        <Redirect from="/" to="/posts" />
       </div>
     );
   }
